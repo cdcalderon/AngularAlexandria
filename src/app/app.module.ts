@@ -1,7 +1,6 @@
-
+import {NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ModuleWithProviders, NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {HomeModule} from './home/home.module';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -14,15 +13,18 @@ import {
 } from './shared';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     SharedModule,
+    HomeModule,
     APP_ROUTING,
   ],
   providers: [],
