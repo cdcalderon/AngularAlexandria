@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:40px;   /* Height of the footer */
+  background:#e0b68e;
+  text-align: center;
+}
+
+.top10 {
+  padding-top: 10px;
+}
