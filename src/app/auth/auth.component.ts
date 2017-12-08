@@ -10,7 +10,7 @@ import {ActivatedRoute} from "@angular/router";
 export class AuthComponent implements OnInit {
   authForm: FormGroup;
   title: String = '';
-  authType: String = '';
+  authType: any = '';
   isSubmitting: boolean = false;
 
   constructor(
