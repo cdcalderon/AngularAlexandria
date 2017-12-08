@@ -1,6 +1,7 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HomeModule} from './home/home.module';
+import { HomeModule } from './home/home.module';
+import {AuthModule} from './auth/auth.module';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -14,6 +15,7 @@ import {
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +25,10 @@ import {
   ],
   imports: [
     BrowserModule,
-    SharedModule,
-    HomeModule,
     APP_ROUTING,
+    AuthModule,
+    HomeModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
