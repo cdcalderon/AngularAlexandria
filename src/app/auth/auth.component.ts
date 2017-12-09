@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-auth-page',
@@ -19,8 +19,8 @@ export class AuthComponent implements OnInit {
   ) {
     this.authForm = this.fb.group(
       {
-        'email': [' ', Validators.required ],
-        'password': [' ', Validators.required ]
+        'email': ['', Validators.required ],
+        'password': ['', Validators.required ]
       }
     );
   }
@@ -38,12 +38,8 @@ export class AuthComponent implements OnInit {
   }
 
   submitForm() {
+    this.isSubmitting = true;
     const formControls = this.authForm.value;
     console.log(formControls);
   }
-
-  setUpForm() {
-
-  }
-
 }
